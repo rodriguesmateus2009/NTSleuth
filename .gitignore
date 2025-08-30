@@ -76,9 +76,8 @@ _deps/
 # Output & Generated Files
 # ====================
 
-# Output directory (contains generated syscalls files)
+# Output directory (contains generated syscalls files) - only at root level
 /output/
-output/
 
 # Cache directory (for downloaded symbols)
 /cache/
@@ -268,8 +267,10 @@ env/
 # Miscellaneous
 # ====================
 
-# Core dumps
+# Core dumps (be specific to avoid catching src/core directory)
 core
+!src/core/
+!include/core/
 core.*
 vgcore.*
 
