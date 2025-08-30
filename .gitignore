@@ -1,0 +1,313 @@
+# ====================
+# Build Artifacts
+# ====================
+
+# Build directories
+/build/
+/cmake-build-*/
+/out/
+/Build/
+/x64/
+/x86/
+/ARM64/
+/Win32/
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+_deps/
+*.cmake
+!CMakeLists.txt
+
+# ====================
+# Compiled Artifacts
+# ====================
+
+# Prerequisites
+*.d
+
+# Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+*.ipch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Specifically exclude root executable
+/ntsleuth.exe
+/ntsleuth.pdb
+/ntsleuth.ilk
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.ilk
+*.exp
+
+# ====================
+# Output & Generated Files
+# ====================
+
+# Output directory (contains generated syscalls files)
+/output/
+output/
+
+# Cache directory (for downloaded symbols)
+/cache/
+cache/
+
+# Log files
+*.log
+debug.log
+error.log
+build.log
+
+# ====================
+# Visual Studio
+# ====================
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio directories
+.vs/
+.vscode/
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# ====================
+# IDE Files
+# ====================
+
+# JetBrains IDEs (CLion, etc.)
+.idea/
+*.iml
+*.iws
+cmake-build-*/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ====================
+# Third-party Dependencies
+# ====================
+
+# Downloaded dependencies (Zydis)
+/third_party/zydis/
+/third_party/_deps/
+/third_party/build/
+
+# Keep the committed json.hpp file
+!/third_party/json/
+!/third_party/json/include/
+!/third_party/json/include/nlohmann/
+!/third_party/json/include/nlohmann/json.hpp
+
+# ====================
+# OS-specific Files
+# ====================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ====================
+# Backup & Temporary Files
+# ====================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Temporary directories
+/tmp/
+/temp/
+.tmp/
+.temp/
+
+# Archive files (if generated)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ====================
+# Documentation Build
+# ====================
+
+# Doxygen
+/docs/html/
+/docs/latex/
+doxygen_sqlite3.db
+*.tmp
+
+# ====================
+# Python (for scripts)
+# ====================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# ====================
+# Miscellaneous
+# ====================
+
+# Core dumps
+core
+core.*
+vgcore.*
+
+# ctags
+tags
+TAGS
+
+# Coverage files
+*.gcov
+*.gcda
+*.gcno
+coverage/
+*.info
+
+# Profiling
+gmon.out
+*.prof
+
+# Package files
+*.deb
+*.rpm
+*.dmg
+*.iso
+*.msi
+*.msm
+*.msp
+
+# ====================
+# Project-specific
+# ====================
+
+# Keep these files explicitly
+!build.bat
+!clean.bat
+!CMakeLists.txt
+!*.md
+!LICENSE
+!scripts/
+!src/
+!include/
+!/third_party/CMakeLists.txt
